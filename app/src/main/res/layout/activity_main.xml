@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FFC1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="395dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/eventsearch" />
+
+    <ImageView
+        android:id="@+id/SearchButton"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/OptionsButton"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FavoritesButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/options" />
+
+    <ImageView
+        android:id="@+id/QuickSearch"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SearchButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/quicksearch" />
+
+    <ImageView
+        android:id="@+id/FavoritesButton"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:onClick="startFavorites"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuickSearch"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/favorites" />
+
+    <ImageView
+        android:id="@+id/LogOutButton"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OptionsButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
